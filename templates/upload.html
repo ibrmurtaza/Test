@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Upload Data</h3>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" name="data_file" required><br>
+    <label><input type="checkbox" name="remove_duplicates"> Remove duplicates</label><br>
+    <label><input type="checkbox" name="fill_missing"> Fill missing values</label><br>
+    <label><input type="checkbox" name="standardize"> Standardize formats</label><br>
+    <label><input type="checkbox" name="normalize"> Normalize text case</label><br>
+    <input type="submit" name="clean" value="Clean Selected">
+    <input type="submit" name="auto_clean" value="Auto Clean">
+</form>
+{% endblock %}

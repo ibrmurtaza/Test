@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Past Cleanings</h3>
+<table class="data">
+<tr><th>Original</th><th>Cleaned</th><th>Date</th></tr>
+{% for r in records %}
+<tr>
+    <td>{{ r.original_filename }}</td>
+    <td>{{ r.cleaned_filename }}</td>
+    <td>{{ r.timestamp.strftime('%Y-%m-%d %H:%M') }}</td>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}

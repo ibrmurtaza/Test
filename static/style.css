@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+.sidebar {
+    width: 200px;
+    float: left;
+    height: 100vh;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+.sidebar a {
+    display: block;
+    color: #1e90ff;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+table.data {
+    border-collapse: collapse;
+}
+table.data th, table.data td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+button, input[type=submit] {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px;
+}

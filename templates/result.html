@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Cleaned Result Preview</h3>
+<h4>Original</h4>
+{{ original|safe }}
+<h4>Cleaned</h4>
+{{ cleaned|safe }}
+<br>
+<a href="{{ url_for('download') }}">Download Cleaned File</a>
+{% endblock %}
